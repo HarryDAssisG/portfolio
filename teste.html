@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Navigation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100vh;
+            background: #333;
+            padding-top: 20px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        nav ul li {
+            width: 100%;
+            text-align: center;
+        }
+        nav ul li a {
+            display: block;
+            width: 100%;
+            color: white;
+            text-decoration: none;
+            padding: 15px 0;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background: #555;
+        }
+        main {
+            margin-left: 220px;
+            width: calc(100% - 220px);
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+        #home { background: lightcoral; }
+        #about { background: lightseagreen; }
+        #services { background: lightgoldenrodyellow; }
+        #projects { background: lightblue; }
+        #contact { background: lightgray; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">HOME</section>
+        <section id="about">ABOUT</section>
+        <section id="services">SERVICES</section>
+        <section id="projects">PROJECTS</section>
+        <section id="contact">CONTACT</section>
+    </main>
+</body>
+</html>
