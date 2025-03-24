@@ -1,1 +1,0 @@
-Inspiração para esse portifolio: https://www.youtube.com/watch?v=zJE-ze4TfXc&t=194s
